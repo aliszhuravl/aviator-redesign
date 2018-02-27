@@ -1,0 +1,293 @@
+.ab-house__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 30px 50px;
+  background-color: $color-blue-50;
+  color: #fff;
+}
+
+.h-blue-ab {
+  max-width: 100%;
+}
+
+.ab-description {
+  max-width: 500px;
+}
+
+.ab-house__imgblock {
+  background: url('../img/content/bg-about.jpg') no-repeat center;
+  -webkit-background-size: 100%;
+  background-size: cover;
+  height: 620px;
+}
+
+.imgblock__inner {
+  padding-top: 140px;
+  max-width: 1100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.imgblock__inner h2 {
+  font-family: "PFAdamantPro-Medium", "Georgia", sans-serif;
+  font-weight: normal;
+  color: #fff;
+}
+
+.imgblock__inner p {
+  color: #fff;
+}
+
+.fixed-width {
+  max-width: 700px;
+}
+
+.img-logo-inner {
+  margin-right: 100px;
+}
+
+.img-cruiser-inner {
+  margin-right: 100px;
+}
+
+.about-bottom {
+  justify-content: space-between;
+  max-width: 1100px;
+}
+
+.ab-house__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 30px 90px;
+  background-color: $color-blue-50;
+  color: #fff;
+}
+
+.ab-row {
+  max-width: 1100px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.ab-house-white__inner {
+  padding-top: 120px;
+  padding-bottom: 100px;
+  max-width: 1100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.cruiser-inner {
+  flex-direction: row;
+}
+
+.ab-house__link {
+  color: #fff;
+  text-transform: uppercase;
+  opacity: 0.6;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 70px;
+  font-family: AktivGroteskCorp-Bold;
+  font-size: 12px;
+  position: relative;
+
+  &:hover,
+  &:active {
+    opacity: 1;
+    color: #fff;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.gradient {
+  background: linear-gradient(to bottom, #082568, #0f4d99);
+  padding: 55px 0;
+}
+
+.icon-about {
+  opacity: 0.6;
+}
+
+.ab-house__title {
+  margin-bottom: 50px;
+}
+
+.logo-a {
+  width: 395px;
+}
+
+.cruiser-a {
+  width: 395px;
+}
+
+.img-car-block {
+  opacity: 0.3;
+}
+
+.img-descr {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  width: 180px;
+}
+
+.num-box {
+  color: #fff;
+  font-size: 32px;
+  font-family: AktivGroteskCorp-Bold;
+  margin-right: 10px;
+}
+
+.wt {
+  color: #fff;
+  opacity: 0.7;
+}
+
+.right-block-texts {
+  border-left: 1px solid #ccc;
+  padding-left: 100px;
+}
+
+.block-texts {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-right: 130px;
+  max-width: 700px;
+}
+
+.img-to-text-inner {
+  min-height: 225px;
+  margin-bottom: 50px;
+  margin-right: 90px;
+}
+
+.image-to-text {
+  display: flex;
+  align-items: center;
+}
+
+.image-to-text-ad {
+  display: flex;
+  align-items: center;
+  width: 270px;
+  p {
+    width: 70%;
+  }
+}
+.image-to {
+
+}
+
+.desc-inner-ab {
+  margin-right: 150px;
+}
+
+@media (max-width: 640px) {
+
+  .img-to-text-inner {
+    margin: 0 20px;
+  }
+  .ab-description {
+    padding: 0 20px;
+    text-align: center;
+  }
+  .img-logo-inner {
+    display: none;
+  }
+  .ab-house-white__inner {
+    padding-top: 50px;
+    flex-direction: column;
+    padding-bottom: 30px;
+  }
+  .ab-house__header {
+    padding: 30px 30px 50px;
+  }
+  .cruiser-a {
+    width: 200px;
+  }
+  .img-cruiser-inner {
+    margin-right: 0;
+  }
+  .ab-row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .col-ab {
+    margin-bottom: 70px;
+  }
+  .img-descr {
+  margin-top: 5px;
+  }
+  .gradient {
+    padding: 55px 0 0 0;
+  }
+  .image-to-text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .h-blue-ab {
+    width: 100%;
+  }
+  .ab-house-inner {
+    width: 100%;
+  }
+  .ab-house__title {
+    margin-bottom: 50px;
+  }
+  .ab-nav {
+    flex-direction: row;
+  }
+  .ab-house__link {
+    margin-right: 15px;
+  }
+  .desc-inner-ab {
+    text-align: center;
+    margin-bottom: 50px;
+    margin-right: 0;
+  }
+  .right-block-texts {
+    border:0;
+    padding-left: 0;
+  }
+  .block-texts {
+    margin-right: 0;
+    padding: 0 20px 0 20px;
+  }
+  .img-to-text-inner {
+    margin-bottom: 30px;
+    text-align: center;
+    min-height:auto;
+  }
+  .image-to-text-ad {
+    flex-direction: row;
+    text-align: left;
+  }
+  .ab-house__imgblock {
+    max-height: 430px;
+  }
+  .imgblock__inner {
+    padding-top: 100px;
+  }
+  .ab-house__imgblock {
+    background-size: auto;
+  }
+}

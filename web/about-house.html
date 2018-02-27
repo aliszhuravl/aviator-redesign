@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <title>Авиатор — квартиры</title>
+    <link href="js/libs/jquery.ui/jquery.ui.no-theme.css">
+</head>
+<body>
+<div class="page-container">
+    <span class="favorite_link active" id="call-fav">1</span>
+    <header class="header blue-header">
+        <div class="header__inner">
+            <a href="index.html" class="logo logo-white"></a>
+            <nav class="nav">
+                <a href="project.html" class="nav__link"><span class="nav__text">О комплексе</span></a>
+                <a href="apartments.html" class="nav__link"><span class="nav__text">Квартиры</span></a>
+                <a href="placement.html" class="nav__link"><span class="nav__text">Расположение</span></a>
+                <a href="timeline.html" class="nav__link"><span class="nav__text">Ход строительства</span></a>
+                <a href="contacts.html" class="nav__link"><span class="nav__text">Контакты</span></a>
+            </nav>
+            <a href="tel:+78123366355" class="header__tel">+7 (812) 336-63-55</a>
+            <a href="#" id="modal-callback-mobile" class="btn btn_primary btn_callback">Перезвоните мне</a>
+            <button class="hamburger">
+                <span></span>
+            </button>
+        </div>
+    </header>
+    <main class="page page-apartments">
+        <div class="page__inner">
+            <section>
+                <div class="ab-house__header">
+                    <h1 class="ab-house__title">О комплексе</h1>
+                    <nav class="project__nav ab-nav">
+                        <a href="#" class="link ab-house__link">
+                           <div>
+                                О доме
+                            </div>
+                        </a>
+                        <a href="parking.html" class="link ab-house__link">
+                            <div>
+                                Паркинг
+                            </div></a>
+                        <a href="gallery.html" class="link ab-house__link">
+                            <div>
+                                Галерея
+                            </div></a>
+                        <a href="docs.html" class="link ab-house__link">
+                            <div>
+                                Документы
+                            </div>
+                        </a>
+                    </nav>
+                </div>
+            </section>
+            <section>
+                <div class="ab-house__imgblock">
+                    <div class="imgblock__inner">
+                        <div class="img-logo-inner">
+                            <img class="logo-a" src="img/svg/logo-a.svg">
+                        </div>
+                        <div class="ab-description">
+                            <h2>ЖК «Авиатор»</h2>
+                            <h2>это дом клубного типа в экологичном районе города</h2>
+                            <p>Дом бизнес-класса с высокими потолками и подземнымпаркингом. Это дом для тех, кто хочет жить в настоящем Петербурге: рядом с набережной и вдали
+                                от спальных районов. В доме всего пять этажей и сорок квартир.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="ab-house-white__inner cruiser-inner">
+                        <div class="img-car-block img-cruiser-inner">
+                            <img class="cruiser-a" src="img/svg/4x4-car.svg">
+                        </div>
+                        <div class="ab-description">
+                            <h2>Выезжать в центр и за город</h2>
+                            <p>Дом удачно нашел географический компромисс. Это не центр с его узкими улицами и старыми домами, и не окраина города с пробками в спальных районах. Дом стоит на улице Савушкина, которая выходит на Приморское шоссе. В обычное время вы будете добираться на работу и за город одинаково быстро.</p>
+                        </div>
+                </div>
+            </section>
+            <section>
+                <div class="gradient">
+                    <div class="ab-row">
+                        <div class="col-ab">
+                            <img src="img/icons/steps.png">
+                            <div class="img-descr">
+                                <div class="num-box">17</div>
+                                <div class="wt">минут пешком до Чёрной речки</div>
+                            </div>
+                        </div>
+                        <div class="col-ab">
+                            <img src="img/icons/car.png">
+                            <div class="img-descr">
+                                <div class="num-box">16</div>
+                                <div class="wt">минут на машине до Авроры</div>
+                            </div>
+                        </div>
+                        <div class="col-ab">
+                            <img src="img/icons/road.png">
+                            <div class="img-descr">
+                                <div class="num-box">2,6</div>
+                                <div class="wt">километров до ЗСД</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="ab-house-white__inner">
+                    <div class="text-table__row">
+                        <div class="img-to-text-inner">
+                            <div class="image-to-text-ad mar_b_30">
+                                <div class="image-text__container">
+                                    <img class="image-to" src="img/icons/icon-apartment.png">
+                                </div>
+                                <p>На этаже всего 5 квартир</p>
+
+                            </div>
+                            <div class="image-to-text-ad mar_b_30">
+                                <div class="image-text__container">
+                                    <img class="image-to" src="img/icons/gear.png">
+                                </div>
+                                <p>Все коммуникации спрятаны в стяжке пола</p>
+                            </div>
+                        </div>
+
+                        <div class="img-to-text-inner">
+                            <h2>Жить в клубном доме</h2>
+                            <p class="fixed-width">Дом удачно нашел географический компромисс. Это не центр с его узкими улицами и старыми домами, и не окраина города с пробками в спальных районах. Дом стоит на улице Савушкина, которая выходит на Приморское шоссе. В обычное время вы будете добираться на работу и за город одинаково быстро.</p>
+                        </div>
+                    </div>
+
+                    <div class="text-table__row">
+                        <div class="img-to-text-inner">
+                            <div class="image-to-text-ad mar_b_30">
+                                <div class="image-text__container">
+                                    <img class="image-to" src="img/icons/wall.png">
+                                </div>
+                                <p>На этаже всего 5 квартир</p>
+                            </div>
+                            <div class="image-to-text-ad mar_b_30">
+                                <div class="image-text__container">
+                                    <img class="image-to" src="img/icons/hz.png">
+                                </div>
+                                <p>Все коммуникации спрятаны в стяжке пола</p>
+                            </div>
+                            <div class="image-to-text-ad mar_b_30">
+                                <div class="image-text__container">
+                                    <img class="image-to" src="img/icons/lift.png">
+                                </div>
+                                <p>Все коммуникации спрятаны в стяжке пола</p>
+                            </div>
+                        </div>
+
+                        <div class="img-to-text-inner">
+                            <h2>Жить в тишине</h2>
+                            <p class="fixed-width">Дом удачно нашел географический компромисс. Это не центр с его узкими улицами и старыми домами, и не окраина города с пробками в спальных районах. Дом стоит на улице Савушкина, которая выходит на Приморское шоссе. В обычное время вы будете добираться на работу и за город одинаково быстро.</p>
+                        </div>
+                    </div>
+
+                    <div class="text-table__row">
+                        <div class="img-to-text-inner">
+                            <div class="image-to-text-ad mar_b_30">
+                                <div class="image-text__container">
+                                    <img class="image-to" src="img/icons/safe.png">
+                                </div>
+                                <p>На этаже всего 5 квартир</p>
+                            </div>
+                            <div class="image-to-text-ad mar_b_30">
+                                <div class="image-text__container">
+                                    <img class="image-to" src="img/icons/tree.png">
+                                </div>
+                                <p>Все коммуникации спрятаны в стяжке пола</p>
+                            </div>
+                        </div>
+
+                        <div class="img-to-text-inner">
+                            <h2>Гулять с детьми</h2>
+                            <p class="fixed-width">Дом удачно нашел географический компромисс. Это не центр с его узкими улицами и старыми домами, и не окраина города с пробками в спальных районах. Дом стоит на улице Савушкина, которая выходит на Приморское шоссе. В обычное время вы будете добираться на работу и за город одинаково быстро.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="ab-house__inner">
+                    <div class="image-to-text about-bottom">
+                        <div class="desc-inner-ab">
+                            <h2>Заехать в 2018 г.</h2>
+                            <p class="mar_b_30">Ввод дома в эксплуатацию запланирован на четвертый квартал 2018 года.</p>
+                            <a href="#" class="btn btn_gold btn_arrow">Больше о доме</a>
+                        </div>
+                        <div class="ab-house-inner">
+                            <img class="h-blue-ab" src="img/content/house-2.png" alt="Дом">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="footer footer__absolute">
+        <div class="footer__inner">
+            <p class="footer__copyright">© Строительная компания «Авиатор»</p>
+            <a href="http://its.agency/" class="footer-dev-abs" target="_blank">Разработка сайта <span>ITS</span></a>
+        </div>
+    </footer>
+    <div class="menu-mobile">
+        <div class="menu-mobile__inner">
+            <nav class="nav-mobile">
+                <a href="index.html" class="nav-mobile__link">Главная</a>
+                <a href="project.html" class="nav-mobile__link">О проекте</a>
+                <a href="apartments.html" class="nav-mobile__link">Квартиры</a>
+                <a href="placement.html" class="nav-mobile__link">Расположение</a>
+                <a href="timeline.html" class="nav-mobile__link">Ход строительства</a>
+                <a href="contacts.html" class="nav-mobile__link">Контакты</a>
+            </nav>
+            <a href="tel:+78123366355" class="link link_tel">+7 (812) 336-63-55</a>
+            <a href="#" id="modal-callback" class="btn btn_primary btn_callback">Перезвоните мне</a>
+        </div>
+    </div>
+</div>
+<div class="modal modal-apartment">
+    <div class="modal__header">
+        <h1 class="modal__title">2-комнатная квартира</h1>
+        <div class="flex-wrap"></div>
+        <button class="btn btn_like" type="button">В избранное</button>
+        <button class="btn btn_download" type="button">Скачать PDF</button>
+        <button class="btn btn_close-ap" type="button" id="clsbtn"><img src="img/icons/close.png" alt="close"></button>
+    </div>
+    <div class="modal__body">
+        <div class="modal__content">
+            <div class="modal__schema">
+                <div class="modal__img">
+                    <img src="img/content/schema/2-room_big.png" alt="2 комнатная квартира">
+                </div>
+            </div>
+            <div class="modal__schema">
+                <p class="modal__subtitle">Расположение на этаже</p>
+                <div class="modal__img">
+                    <img src="img/content/schema/2-floor.png" alt="2 этаж">
+                </div>
+            </div>
+        </div>
+        <div class="modal__sidebar">
+            <div class="table table_info">
+                <div class="table__body">
+                    <div class="table__row row-punktire mar_b_50">
+                        <div>
+                            <p class="table__text bold-table-items">№ 24<br>3-й этаж</p>
+                        </div>
+                        <div>
+                            <p class="table__number">24 340 000 <span class="rouble">№</span></p>
+                        </div>
+                    </div>
+
+                    <div class="table__row row-punktire">
+                        <div class="table__data">
+                            <p class="table__text bold-table-items">Площадь (м<sup>2</sup>)</p>
+                        </div>
+                    </div>
+
+                    <div class="table__row row-punktire">
+                        <div class="table__data">
+                            <div class="table__text dot-lined">Общая<div class="dots-list"></div>77.5</div>
+                        </div>
+                    </div>
+
+                    <div class="table__row row-punktire">
+                        <div class="table__data">
+                            <div class="table__text dot-lined">Жилая<div class="dots-list"></div>37.6</div>
+                        </div>
+                    </div>
+
+                    <div class="table__row row-punktire">
+                        <div class="table__data">
+                            <div class="table__text dot-lined">Кухни<div class="dots-list"></div>17.7</div>
+                         </div>
+                    </div>
+
+                    <div class="table__row row-punktire">
+                        <div class="table__data">
+                            <div class="table__text dot-lined">Комнаты 1<div class="dots-list"></div>17.3</div>
+                        </div>
+                    </div>
+
+                    <div class="table__row row-punktire">
+                        <div class="table__data">
+                            <div class="table__text dot-lined">Комнаты 2<div class="dots-list"></div>20.3</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <form class="form form-modal">
+                <div class="form-row">
+                <input type="text" class="form__input row-input" placeholder="Имя">
+                <input type="tel" class="form__input" placeholder="Телефон">
+                </div>
+                <textarea class="form__textarea" placeholder="Комментарий"></textarea>
+                <button class="btn btn_primary btn_arrow" type="submit">Отправить</button>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="modal modal-callback">
+    <p class="modal-callback__title">Наш менеджер свяжется с вами в течение 15 минут</p>
+    <form class="form form-modal">
+        <input type="text" class="form__input" placeholder="Имя">
+        <input type="tel" class="form__input" placeholder="Телефон">
+        <button class="btn btn_primary btn_arrow" type="submit">Отправить</button>
+    </form>
+</div>
+<div class="modal modal-favorite">
+    <div class="modal__header">
+        <h1 class="modal__title">Избранные планировки</h1>
+    </div>
+    <div class="modal__body noflex">
+        <form class="form">
+            <div class="result">
+                <div class="cards cards_plate">
+                    <div class="card">
+                        <a href="/choice/210/" class="card__link" data-type="0" data-floor="2" data-id="10"></a>
+                        <p class="card__number"><span class="card__text">№</span>4</p>
+                        <div class="card__img">
+                            <img src="img/content/schema/2-room.png" alt="">
+                        </div>
+                        <div class="card__info">
+                            <div class="card__text">
+                                <p class="card__desc">комнат</p>
+                                <p class="card__desc-number">1</p>
+                            </div>
+                            <div class="card__text">
+                                <p class="card__desc">площадь</p>
+                                <p class="card__desc-number">53,60 м<sup>2</sup></p>
+                            </div>
+                            <div class="card__text">
+                                <p class="card__desc">этаж</p>
+                                <p class="card__desc-number">2</p>
+                            </div>
+                            <div class="card__text">
+                                <p class="card__desc">стоимость</p>
+                                <p class="card__desc-number">6 968 000 <span class="rouble">№</span></p>
+                            </div>
+                        </div>
+                        <button class="icon-like remove-like" type="button" data-id="10" title="Удалить из избранного"></button>
+                    </div><div class="card">
+                    <a href="/choice/23/" class="card__link" data-type="0" data-floor="2" data-id="3"></a>
+                    <p class="card__number"><span class="card__text">№</span>22</p>
+                    <div class="card__img">
+                        <img src="img/content/schema/2-room.png" alt="">
+                    </div>
+                    <div class="card__info">
+                        <div class="card__text">
+                            <p class="card__desc">комнат</p>
+                            <p class="card__desc-number">1</p>
+                        </div>
+                        <div class="card__text">
+                            <p class="card__desc">площадь</p>
+                            <p class="card__desc-number">53,60 м<sup>2</sup></p>
+                        </div>
+                        <div class="card__text">
+                            <p class="card__desc">этаж</p>
+                            <p class="card__desc-number">2</p>
+                        </div>
+                        <div class="card__text">
+                            <p class="card__desc">стоимость</p>
+                            <p class="card__desc-number">7 182 400 <span class="rouble">№</span></p>
+                        </div>
+                    </div>
+                    <button class="icon-like remove-like" type="button" data-id="3" title="Удалить из избранного"></button>
+                </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_KN38WFcmjBkbBmjdxukx5r8Q3wnm8ig"></script>
+<script src="js/libs/jquery/jquery.min.js"></script>
+<script src="js/libs/jquery.ui/jquery.ui.min.js"></script>
+<script src="js/libs/jquery.slick/slick.min.js"></script>
+<script src="js/libs/jquery.fullpage/jquery.fullpage.min.js"></script>
+<script src="js/libs/jquery.sticky/jquery.hc-sticky.min.js"></script>
+<script src="js/libs/sly/sly.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

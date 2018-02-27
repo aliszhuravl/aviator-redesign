@@ -1,0 +1,16 @@
+.switcher {
+  display: flex;
+  flex-direction: row;
+}
+
+.switcher__item {
+  display: none;
+}
+
+.switcher__item.active {
+  display: block;
+}
+
+.switcher__content {
+  padding: 50px;
+}

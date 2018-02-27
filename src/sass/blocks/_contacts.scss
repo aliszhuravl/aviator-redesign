@@ -1,0 +1,145 @@
+.contacts {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  width: 100%;
+}
+
+.contacts__part {
+  display: flex;
+  width: 50%;
+  position: relative;
+}
+
+.contacts-sale,
+.contacts-form {
+  flex-grow: 1;
+  padding: 150px 15% 100px;
+}
+
+.contacts-form {
+  background-color: $color-blue-50;
+  color: #fff;
+}
+
+.contacts__header {
+  margin-bottom: 30px;
+}
+
+.contacts__title {
+  margin-bottom: 10px;
+}
+
+.contacts__subtitle {
+  font-size: 16px;
+}
+
+.contacts__tel {
+  font-size: 21px;
+  margin-right: 30px;
+}
+
+.abs-title {
+  position: absolute;
+  left: 20%;
+  z-index: 2;
+  color: #fff;
+  top: 150px;
+}
+
+.adresses {
+  position: absolute;
+  background-color: transparent;
+  color: #fff;
+  z-index: 2;
+  left: 20%;
+  bottom: 5%;
+  display: flex;
+  justify-content: center;
+}
+
+.simple-hidden {
+  display: none;
+}
+
+.ad_col_1 {
+  margin-right: 60px;
+}
+
+.adresses__inner {
+  display: flex;
+  justify-content: flex-end;
+  transition: 0.1s;
+
+}
+
+.roll_this {
+  transform: rotate(-90deg) translateY(-50%);
+  position: absolute;
+  right: -10px;
+  top: 45%;
+  text-transform: uppercase;
+  font-family: AktivGroteskCorp-Bold;
+  color: #000;
+  opacity: 0.2;
+}
+
+.roll-button {
+  border: none;
+  background-color: transparent;
+  text-transform: uppercase;
+}
+
+.form-row {
+  display: flex;
+}
+
+.row-input {
+  margin-right: 15px;
+  &:last-child{
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 640px) {
+
+  .contacts {
+    flex-direction: column;
+  }
+
+  .contacts__part {
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+
+  .contacts-sale,
+  .contacts-form {
+    padding: 50px 20px 70px;
+  }
+  .form-row {
+    flex-direction: column;
+  }
+  .adresses {
+    position: static;
+    width: 100%;
+    top: auto;
+    background-color: $color-blue-50;
+  }
+  .adresses__inner {
+   padding: 30px;
+  }
+  .map {
+    margin-bottom: 0 !important;
+  }
+  .roll_this {
+    display: none;
+  }
+  .footer__absolute {
+    position: relative !important;
+    background-color: $color-blue-50 !important;
+  }
+  .abs-title {
+    top: 20px;
+    left: 5%;
+  }
+}

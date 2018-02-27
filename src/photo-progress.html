@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    //= html/_head.html
+    <title>Авиатор – клубный дом</title>
+</head>
+<body>
+<div class="page-container">
+    //= html/_favorite.html
+    //= html/_blue-header.html
+    <main class="page page-photo">
+        <div class="page__inner">
+            <section class="timeline with-slider">
+
+                <div class="tabs tabs-years">
+                    <ul class="tabs__menu style-tabs-menu buttons">
+                        <!--<li class="tabs__menu-item ord-tab1" id="tab18"><a href="#tab_year_2018" class="tabs__tab tab_plate year-style">2018</a></li>-->
+                        <li class="tabs__menu-item ord-tab2" id="tab17"><a href="#tab_year_2017" class="tabs__tab tab_list year-style">2017</a></li>
+                        <li class="tabs__menu-item ord-tab3" id="tab16"><a href="#tab_year_2016" class="tabs__tab tab_list year-style">2016</a></li>
+                    </ul>
+
+                    <div class="tabs__content">
+
+                        <div class="tabs__item" id="tab_year_2018">
+                            <div class="tabs tabs-month">
+                                <ul class="tabs__menu months-list  style-tabs-menu">
+                                    <li class="tabs__menu-item"><a href="#tab_2018_month_10" class="tabs__tab tab_plate month-style">Октябрь</a></li>
+                                </ul>
+
+                                <div class="tabs__content">
+                                    //= html/tabs/_tabs_year_2018/_tabs_month_10.html
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="tabs__item" id="tab_year_2017">
+                            <div class="tabs tabs-month">
+                                <ul class="tabs__menu months-list  style-tabs-menu">
+                                    <li class="tabs__menu-item"><a href="#tab_2017_month_12" class="tabs__tab tab_plate month-style">Декабрь</a></li>
+                                    <li class="tabs__menu-item"><a href="#tab_2017_month_11" class="tabs__tab tab_list month-style">Ноябрь</a></li>
+                                    <li class="tabs__menu-item"><a href="#tab_2017_month_10" class="tabs__tab tab_list month-style">Октябрь</a></li>
+                                </ul>
+
+                                <div class="tabs__content">
+                                    //= html/tabs/_tabs_year_2017/_tabs_month_12.html
+                                    //= html/tabs/_tabs_year_2017/_tabs_month_11.html
+                                    //= html/tabs/_tabs_year_2017/_tabs_month_10.html
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tabs__item" id="tab_year_2016">
+                            <div class="tabs tabs-month">
+                                <ul class="tabs__menu months-list ml-right">
+                                    <li class="tabs__menu-item"><a href="#tab_2016_month_12" class="tabs__tab tab_plate month-style">Декабрь</a></li>
+                                    <li class="tabs__menu-item"><a href="#tab_2016_month_11" class="tabs__tab tab_list month-style">Ноябрь</a></li>
+                                    <li class="tabs__menu-item"><a href="#tab_2016_month_10" class="tabs__tab tab_list month-style">Октябрь</a></li>
+                                </ul>
+
+                                <div class="tabs__content">
+                                    //= html/tabs/_tabs_year_2016/_tabs_month_12.html
+                                    //= html/tabs/_tabs_year_2016/_tabs_month_11.html
+                                    //= html/tabs/_tabs_year_2016/_tabs_month_10.html
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+    </main>
+    //= html/_blue-footer.html
+</div>
+//= html/_menu-mobile.html
+//= html/_modal-favorite.html
+//= html/_modal-callback.html
+//= html/_modal-timeline.html
+//= html/_scripts.html
+</body>
+</html>

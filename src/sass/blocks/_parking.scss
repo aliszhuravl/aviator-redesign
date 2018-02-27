@@ -1,0 +1,41 @@
+.parking__box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+
+.docs__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.docs__box {
+  a {
+    text-decoration: none;
+    position: relative;
+    color: #0f4d99;
+    &:before {
+      background: url('../img/svg/pdf_icon.svg') center no-repeat;
+      content: '';
+      top:0;
+      width: 30px;
+      height: 27px;
+      left: -35px;
+      display: block;
+      position: absolute;
+    }
+}
+  p {
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 640px) {
+  .parking__box{
+    margin: 20px;
+  }
+}

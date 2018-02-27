@@ -1,0 +1,67 @@
+.main-name {
+  font-family: "PFAdamantPro-Regular", "Georgia", sans-serif;
+  font-size: 90px !important;
+  font-weight: normal;
+}
+
+.main-upper {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.top-name {
+  padding: 20% 100px 10%;
+}
+
+.fb-blue {
+  border: 1px solid #7ca5e0;
+  color: #fff;
+  opacity: 0.8;
+  &:hover {
+    background-color: #e9cc8f;
+    border-color: #e9cc8f;
+    color: $color-blue-50;
+    opacity: 1;
+  }
+}
+
+
+.rouble {
+  font-family: Roublesans;
+  font-weight: bold;
+}
+
+@media (max-width: 640px) {
+  .top-name {
+    padding: 0;
+  }
+  .main-name {
+    font-size: 45px !important;
+  }
+  .about__alone {
+   flex-direction: column;
+    width: 100%;
+    min-width: auto;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .btn_on-border {
+    position: relative;
+    margin: 0 auto;
+    top:auto;
+    left: auto;
+    transform: none;
+  }
+  .about__inner {
+    min-height: 250px;
+  }
+  .about__text {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 400px) {
+  .about__inner {
+    min-height: 150px;
+  }
+}

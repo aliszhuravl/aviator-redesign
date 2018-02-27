@@ -1,0 +1,49 @@
+.image-container-s {
+  background-image: url("../img/content/bg-apartment.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  &:after {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    content: "";
+    pointer-events: none;
+    //background-color: rgba(0, 111, 255, .15);
+    background-image: linear-gradient(-135deg, rgba(0,111,255,0), rgba(0, 65, 141, 0.35));
+
+  }
+}
+
+.safety-cont {
+  background-image: url("../img/content/bg-safety.jpg");
+}
+
+.archit-cont {
+  background-image: url("../img/content/bg-architecture.jpg");
+}
+
+.inter-cont {
+  background-image: url("../img/content/bg-interior.jpg");
+}
+
+.mater-cont {
+  background-image: url("../img/content/bg-materials.jpg");
+}
+
+.place-cont {
+  background-image: url("../img/content/bg-place.jpg");
+}
+
+@media (max-width: 640px) {
+  .image-container-s {
+    background-position: 65% 35%;
+    background-size: auto 100%;
+  }
+}

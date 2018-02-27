@@ -1,0 +1,279 @@
+.plan {
+  position: relative;
+  margin-left: 50px;
+}
+
+.plan__img {
+
+  img {
+    pointer-events: none;
+    user-select: none;
+    vertical-align: top;
+  }
+}
+
+.plan_streets {
+  position: relative;
+  padding: 50px;
+//margin: 0 50px 50px;
+  margin: 0 200px 50px 0;
+  //border-left: 1px solid $color-gray-30;
+  //border-bottom: 1px solid $color-gray-30;
+
+  //&:before {
+  //  position: absolute;
+  //  bottom: 0;
+  //  left: 0;
+  //  content: '';
+  //  width: 1px;
+  //  height: 550px;
+  //  background-color: $color-gray-30;
+  //}
+}
+
+.plan__street-name {
+  position: absolute;
+  color: #fff;
+  font-size: 16px;
+  opacity: 0.4;
+}
+
+.plan__street-name_left {
+  top: 50%;
+  left: -70px;
+  transform: translateY(-50%) rotate(-90deg);
+  opacity: 0.4;
+}
+
+.plan__street-name_bottom {
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.plan__schema {
+  position: relative;
+  min-height: 360px;
+}
+
+.plan__schema_all {
+
+  & .plan__img {
+    width: 900px;
+    height: 357px;
+    margin-right: 120px;
+  }
+}
+
+.plan__schema_floor-4 {
+  margin: 80px 0;
+
+  & .plan__img {
+    width: 675px;
+  }
+}
+
+.plan-info {
+  position: absolute;
+  display: inline-flex;
+  flex-direction: row;
+  border: 2px solid #072264;
+  width: 120px;
+  height: 50px;
+  background: #fff;
+  margin: 25px 30px;
+}
+
+
+
+.apart_1 {
+  top: -100px;
+  left: 0;
+}
+.apart_2 {
+  top: -100px;
+  left: 160px;
+}
+.apart_3 {
+  top: -100px;
+  left: 320px;
+}
+.apart_4 {
+  top: -100px;
+  left: 480px;
+}
+.apart_5 {
+  bottom: -100px;
+  left: 0;
+}
+.apart_6 {
+  bottom: -100px;
+  left: 160px;
+}
+.apart_7 {
+  bottom: -100px;
+  left: 320px;
+}
+.apart_8 {
+  bottom: -100px;
+  left: 480px;
+}
+
+
+.plan-info__cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  color: #fff;
+  line-height: 1;
+  background-color: $color-blue-50;
+
+  &:first-child {
+    border-right: 2px solid #072264;
+    width: 40%;
+  }
+}
+
+.plan-info__number {
+  font-size: 21px;
+  font-family: $font-family_medium;
+}
+
+.plan-info__text {
+  font-size: 12px;
+  margin: 4px 0;
+}
+
+.plan-windrose {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -48px;
+  width: 96px;
+  height: 99px;
+  background: url('../img/content/plan-windrose.png') no-repeat center center;
+}
+
+.legend {
+  display: flex;
+  align-items: center;
+  margin-right: 200px;
+}
+
+.round {
+  content: '';
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #0b60c9;
+  margin-right: 10px;
+}
+
+.r-two {
+  background-color: #5892d9;
+}
+
+.r-three {
+  background-color: #bad8f1;
+}
+
+.r-soldout {
+  background-color: transparent;
+  border: 1px solid #0b60c9;
+}
+
+.p-legend {
+  margin-right: 30px;
+  color: #fff;
+}
+
+.windrose {
+  position: absolute;
+  right: -300px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.round-info-floor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 1740px) {
+  .plan {
+    position: relative;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .windrose {
+    display: none;
+  }
+  .plan_streets {
+    margin: 0;
+    padding: 0;
+  }
+  .sch-floor-4__inner {
+    min-width: 700px;
+    margin-left: 40px;
+  }
+  .legend {
+    margin-right: 0;
+    margin-top: 30px;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .round-info-floor {
+    margin-bottom: 20px;
+  }
+  .plan__street-name_left {
+    left: -40px;
+  }
+  .sch_inner {
+    margin: 30px 0;
+  }
+  .plan__schema_floor-4 {
+    padding: 80px 0;
+    margin: 0;
+  }
+  .apart_1 {
+    top: -20px;
+    left: 0;
+  }
+  .apart_2 {
+    top: -20px;
+    left: 160px;
+  }
+  .apart_3 {
+    top: -20px;
+    left: 320px;
+  }
+  .apart_4 {
+    top: -20px;
+    left: 480px;
+  }
+  .apart_5 {
+    bottom: -20px;
+    left: 0;
+  }
+  .apart_6 {
+    bottom: -20px;
+    left: 160px;
+  }
+  .apart_7 {
+    bottom: -20px;
+    left: 320px;
+  }
+  .apart_8 {
+    bottom: -20px;
+    left: 480px;
+  }
+  .sch_inner {
+    overflow-x: scroll;
+    width: 100%;
+  }
+}

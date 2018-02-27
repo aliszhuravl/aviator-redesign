@@ -1,0 +1,162 @@
+.choice {
+  position: relative;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  width: 100%;
+}
+
+.choice__sidebar {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 250px;
+  min-width: 100px;
+  width: 100%;
+  background-color: $color-blue-50;
+}
+
+.choice__content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 700px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: $color-blue-50;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 100px;
+}
+
+.flat-content {
+  align-items: center;
+}
+
+.top-house-choice {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 130px;
+}
+
+.choice__title {
+  margin-bottom: 10px;
+  color: #fff;
+  text-align: center;
+}
+
+.choice__subtitle {
+  font-size: 21px;
+  line-height: 21px;
+  margin-bottom: 30px;
+  color: #fff;
+  text-align: center;
+}
+
+.mobile-choice {
+  display: none;
+}
+
+@media (max-width: 1860px) {
+  .choice__content{
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 1770px) {
+    .table_plan {
+      right: -200px;
+  }
+}
+
+@media (max-width: 1600px) {
+  .table_plan {
+    right: -220px !important;
+  }
+  .choice__sidebar {
+    max-width: 170px;
+  }
+}
+
+@media (max-width: 1430px) {
+  .table_plan {
+    right: -50px !important;
+  }
+  .choice__sidebar {
+    max-width: 170px;
+  }
+}
+
+@media (max-width: 640px) {
+  .choice {
+    flex-direction: row;
+  }
+  .choice__content {
+    padding-bottom: 30px;
+  }
+
+  .plan {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .plan__schema {
+    width: 100%;
+    overflow-x: scroll;
+  }
+  .choice__sidebar {
+    position: absolute;
+    left: 50%;
+    top: 27%;
+    transform: translateX(-50%);
+    max-width: 300px;
+  }
+
+  .filters_vertical .filters__btn {
+    margin-right: 10px !important;
+  }
+
+  .flat-top-choise {
+    top: 17% !important;
+  }
+
+  .mobile-choice {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 250px;
+    min-width: 100px;
+    width: 100%;
+    background-color: $color-blue-50;
+  }
+  .mobile-choice .filters {
+    display: flex;
+    margin-top: 0;
+  }
+  .mobile-choice .filters_vertical .filters__buttons {
+    flex-direction: row;
+  }
+  .mobile-choice .filters_vertical .filters__btn {
+    margin-right: 20px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  .table_plan {
+    right: -220px !important;
+  }
+  .table_plan .table__number {
+    padding-left: 0;
+  }
+  .table_plan .table__row {
+    padding-left: 25px;
+  }
+}

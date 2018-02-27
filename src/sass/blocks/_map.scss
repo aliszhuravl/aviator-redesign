@@ -1,0 +1,100 @@
+.map {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  min-height: 100%;
+  &:after {
+    position: absolute;
+    top:0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    content: "";
+    pointer-events: none;
+    background-color: rgba(0,111,255, 0.15);
+    z-index:1;
+  }
+}
+
+.map-place {
+  width: 100%;
+  height: calc(100vh - 254px);
+  overflow: hidden;
+
+  &:after {
+    position: absolute;
+    top:0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    content: "";
+    pointer-events: none;
+    background-color: rgba(0,111,255, 0.15);
+    z-index:1;
+  }
+}
+
+.maps__item {
+  margin-bottom: 50px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.maps__title {
+  font-size: 21px;
+  margin-bottom: 10px;
+}
+
+.maps__tel {
+  margin-bottom: 10px;
+}
+
+//.gmnoprint {
+//  display: none;
+//}
+//
+.gm-style-cc {
+  display: none;
+}
+
+@media (max-width: 1280px) {
+  .map-place {
+    min-height: 800px;
+    height: 100%;
+  }
+  .map {
+    min-height: 900px;
+  }
+}
+
+@media  (max-width: 1024px) and (orientation: portrait){
+  .map-place {
+    min-height: 1300px;
+    height: 100%;
+  }
+}
+
+@media  (max-width: 1280px)and (orientation: portrait){
+  .map-place {
+    min-height: 1800px;
+    height: 100%;
+  }
+}
+
+@media  (max-width: 640px) and (orientation: portrait){
+  .map-place {
+    min-height: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .map {
+    min-height: 400px;
+    height: 100%;
+  }
+}

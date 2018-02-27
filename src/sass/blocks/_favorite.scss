@@ -1,0 +1,20 @@
+.favorite_link {
+  height: 83px;
+  width: 53px;
+  padding-left: 10px;
+  text-align: center;
+  line-height: 83px;
+  color: #ffffff;
+  font-size: 18px;
+  display: none;
+  cursor: pointer;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  background: url(../img/content/favorite_link.svg) center no-repeat;
+  z-index: 10;
+}
+
+.favorite_link.active {
+  display: block;
+}

@@ -1,0 +1,41 @@
+.range-slider {
+  max-width: 350px;
+}
+
+.range-slider__desc {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.ui-slider {
+  position: relative;
+  height: 1px;
+  background-color: #7ca5e0;
+  border: none;
+}
+
+.ui-slider-range {
+  position: absolute;
+  z-index: 1;
+  display: block;
+  border: none;
+  height: 1px;
+  background-color: #e9cc8f;
+}
+
+.ui-slider-handle {
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #e9cc8f;
+  outline: 0;
+  border: none;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  cursor: pointer;
+  touch-action: none;
+}
