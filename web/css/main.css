@@ -1550,6 +1550,9 @@ sup {
   .cards_plate .card {
     width: 33.3%;
   }
+  .page-item__subtitle {
+    display: none;
+  }
 }
 
 @media (max-width: 640px) {
